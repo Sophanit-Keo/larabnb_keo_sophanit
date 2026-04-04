@@ -12,7 +12,7 @@
             @foreach ($products as $product)
     <div class="group cursor-pointer justify-between">
         <div class="aspect-square overflow-hidden rounded-2xl bg-gray-100 mb-3">
-            <a href="{{ route('property', ['id' => $product['id']]) }}">
+            <a href="{{ route('property.show', ['id' => $product['id']]) }}">
             <img src="{{ $product['image'] ?? 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80' }}"
                  alt="{{ $product['name'] }}"
                  class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300">
